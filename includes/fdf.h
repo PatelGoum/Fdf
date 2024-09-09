@@ -6,7 +6,7 @@
 /*   By: maguerin <maguerin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 12:43:25 by maguerin          #+#    #+#             */
-/*   Updated: 2024/09/09 11:02:23 by maguerin         ###   ########.fr       */
+/*   Updated: 2024/09/09 11:21:08 by maguerin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include "define.h"
 # include "libft.h"
-# include "mlx.h"
+# include <mlx.h>
 # include <math.h>
 
 /* main.c */
