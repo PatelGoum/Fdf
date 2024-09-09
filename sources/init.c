@@ -6,17 +6,15 @@
 /*   By: maguerin <maguerin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 11:52:17 by maguerin          #+#    #+#             */
-/*   Updated: 2024/09/09 10:36:11 by maguerin         ###   ########.fr       */
+/*   Updated: 2024/09/09 10:57:22 by maguerin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-#include <stdio.h>
 void	set_window(t_meta *data)
 {
 	mlx_get_screen_size(data->mlx, &data->win_width, &data->win_height);
-	printf("%d x %d\n", data->win_width, data->win_height);
 	if (WIDTH < data->win_width)
 		data->win_width = WIDTH;
 	if (HEIGHT < data->win_height)

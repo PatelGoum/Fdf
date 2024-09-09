@@ -6,7 +6,7 @@
 /*   By: maguerin <maguerin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 13:54:25 by maguerin          #+#    #+#             */
-/*   Updated: 2024/09/09 10:44:14 by maguerin         ###   ########.fr       */
+/*   Updated: 2024/09/09 11:03:15 by maguerin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,6 +102,7 @@ void	get_free(t_meta *data)
 	if (data->map_path)
 		free(data->map_path);
 }
+
 int	check_format(char *path)
 {
 	size_t	len;

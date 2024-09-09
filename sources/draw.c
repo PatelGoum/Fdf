@@ -6,7 +6,7 @@
 /*   By: maguerin <maguerin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 09:52:37 by maguerin          #+#    #+#             */
-/*   Updated: 2024/09/09 10:20:18 by maguerin         ###   ########.fr       */
+/*   Updated: 2024/09/09 11:03:59 by maguerin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,8 @@ void	put_pixel(t_meta *data, t_point point, int color)
 
 	x = point.x;
 	y = point.y;
-	if (point.x < 0 || point.y < 0 || point.x >= data->win_width || point.y >= data->win_height)
+	if (point.x < 0 || point.y < 0 || point.x >= data->win_width
+		|| point.y >= data->win_height)
 		return ;
 	offset = x * data->img.bpp / 8 + y * data->img.line_len ;
 	*(unsigned int *)(offset + data->img.pxl_ptr) = color;
